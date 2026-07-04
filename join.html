@@ -1,0 +1,412 @@
+@'
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Baho Pitoy | CODM Clan</title>
+    <meta name="description" content="Premium esports landing page for Baho Pitoy, a competitive Call of Duty Mobile clan." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="cursor"></div>
+
+    <div class="loading-screen">
+      <div class="loading-card">
+        <div class="logo-mark">BP</div>
+        <h2>BAHO PITOY</h2>
+        <p>Loading the arena...</p>
+        <div class="loading-bar"><span></span></div>
+      </div>
+    </div>
+
+    <header class="navbar">
+      <a href="#home" class="brand">
+        <span class="brand-badge">BP</span>
+        <span>BAHO PITOY</span>
+      </a>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#members">Members</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#achievements">Achievements</a>
+        <a href="#events">Events</a>
+        <a href="#leaderboard">Leaderboard</a>
+        <a href="#contact">Contact</a>
+        <a href="#join">Join</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="home" class="hero">
+        <div class="particle-layer"></div>
+        <div class="container hero-content reveal">
+          <h1><span>BAHO</span> PITOY</h1>
+          <p class="slogan">Smell Victory. Leave No Survivors.</p>
+          <p class="lead">
+            A premium Call of Duty: Mobile clan built on discipline, chemistry, and relentless ambition.
+          </p>
+          <div class="hero-btns">
+            <a href="#join" class="btn btn-primary">Join Clan</a>
+            <a href="#members" class="btn btn-secondary">View Members</a>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">About Baho Pitoy</h2>
+          <p class="section-subtitle">
+            Baho Pitoy is a competitive Call of Duty: Mobile clan that values teamwork, loyalty, respect, and continuous improvement.
+          </p>
+          <div class="about-grid">
+            <article class="panel">
+              <h3>Our Identity</h3>
+              <p>
+                We compete with purpose, train with discipline, and play with pride. From Ranked Multiplayer to Battle Royale, our squad brings focus and firepower to every match.
+              </p>
+            </article>
+            <article class="panel">
+              <h3>Leadership</h3>
+              <p>
+                The clan is led by Clan Master Kishou, whose leadership and support keep the team strong, disciplined, and motivated.
+              </p>
+            </article>
+            <article class="panel">
+              <h3>Current Size</h3>
+              <p>
+                Baho Pitoy currently has 12 active members who stay engaged through daily scrims, clan wars, and community events.
+              </p>
+            </article>
+            <article class="panel">
+              <h3>Core Activities</h3>
+              <p>
+                We participate in Ranked Multiplayer, Battle Royale, Clan Wars, custom rooms, and community events that sharpen our skills and strengthen our bond.
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="members" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Clan Members</h2>
+          <p class="section-subtitle">
+            Discover the squad behind the name. Search by name, role, or favorite weapon.
+          </p>
+          <div class="member-toolbar">
+            <div class="search-wrap">
+              <input id="memberSearch" class="search-input" type="text" placeholder="Search members" />
+            </div>
+            <div class="filter-wrap">
+              <select id="roleFilter" class="select-input">
+                <option value="all">All Roles</option>
+                <option value="sniper">Sniper</option>
+                <option value="aggressor">Aggressor</option>
+                <option value="support">Support</option>
+                <option value="rusher">Rusher</option>
+                <option value="tracker">Tracker</option>
+                <option value="controller">Controller</option>
+                <option value="flanker">Flanker</option>
+                <option value="igl">IGL</option>
+              </select>
+            </div>
+          </div>
+          <div id="membersGrid" class="member-grid"></div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Performance Stats</h2>
+          <div class="stats-grid">
+            <article class="panel stat-card">
+              <div class="counter" data-target="12">0</div>
+              <p>Total Members</p>
+            </article>
+            <article class="panel stat-card">
+              <div class="counter" data-target="9">0</div>
+              <p>Active Members</p>
+            </article>
+            <article class="panel stat-card">
+              <div class="counter" data-target="18">0</div>
+              <p>Clan Level</p>
+            </article>
+            <article class="panel stat-card">
+              <div class="counter" data-target="134">0</div>
+              <p>Total Victories</p>
+            </article>
+          </div>
+          <div class="stats-grid" style="margin-top:1rem;">
+            <article class="panel progress-wrap">
+              <p>Clan War Participation</p>
+              <div class="progress-line"><span style="width: 84%"></span></div>
+              <div class="counter" data-target="57">0</div>
+            </article>
+            <article class="panel progress-wrap">
+              <p>MVP Awards</p>
+              <div class="progress-line"><span style="width: 72%"></span></div>
+              <div class="counter" data-target="21">0</div>
+            </article>
+            <article class="panel progress-wrap">
+              <p>Ranked Wins</p>
+              <div class="progress-line"><span style="width: 91%"></span></div>
+              <div class="counter" data-target="88">0</div>
+            </article>
+            <article class="panel progress-wrap">
+              <p>Weekly Scrims</p>
+              <div class="progress-line"><span style="width: 67%"></span></div>
+              <div class="counter" data-target="46">0</div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="achievements" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Achievements</h2>
+          <p class="section-subtitle">Trophies, titles, and milestones we continue to build.</p>
+          <div class="achievement-grid">
+            <article class="achievement-card">
+              <h3>Season Trophies</h3>
+              <p>Multiple top placements in ranked and tournament ladders.</p>
+            </article>
+            <article class="achievement-card">
+              <h3>Clan War Victories</h3>
+              <p>Dominant showings in high-stakes Clan Wars and elimination brackets.</p>
+            </article>
+            <article class="achievement-card">
+              <h3>MVP Honors</h3>
+              <p>Standout players recognized for clutch plays and total impact.</p>
+            </article>
+          </div>
+          <div class="timeline" style="margin-top:1.2rem;">
+            <div class="timeline-item">
+              <h3>Spring Invitational</h3>
+              <p>Top 8 finish with a strong team showing.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Ranked Surge</h3>
+              <p>Maintained elite performance through the season.</p>
+            </div>
+            <div class="timeline-item">
+              <h3>Future Goals</h3>
+              <p>Expanding into larger tournaments and stronger squad synergy.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="gallery" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Gallery</h2>
+          <div class="gallery-grid">
+            <div class="gallery-item panel" data-image="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=1000&q=80">
+              <img src="https://images.unsplash.com/photo-1542751371-adc38448a05e?auto=format&fit=crop&w=900&q=80" alt="Victory moment" />
+            </div>
+            <div class="gallery-item panel" data-image="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=1000&q=80">
+              <img src="https://images.unsplash.com/photo-1511512578047-dfb367046420?auto=format&fit=crop&w=900&q=80" alt="Team photo" />
+            </div>
+            <div class="gallery-item panel" data-image="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=1000&q=80">
+              <img src="https://images.unsplash.com/photo-1493711662062-fa541adb3fc8?auto=format&fit=crop&w=900&q=80" alt="MVP highlight" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="events" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Upcoming Events</h2>
+          <div class="events-grid">
+            <article class="event-card">
+              <span class="event-badge">Upcoming</span>
+              <h3>Clan War Weekend</h3>
+              <p>Intense squad battles and high-tier strategy.</p>
+              <div class="countdown" data-date="2026-07-12T20:00:00"></div>
+            </article>
+            <article class="event-card">
+              <span class="event-badge">Ongoing</span>
+              <h3>Ranked Grind Session</h3>
+              <p>Daily grind for better placement and consistency.</p>
+              <div class="countdown" data-date="2026-07-10T18:30:00"></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="leaderboard" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Leaderboard</h2>
+          <div class="leaderboard-card">
+            <table class="leaderboard-table">
+              <thead>
+                <tr>
+                  <th>Rank</th>
+                  <th>Player</th>
+                  <th>K/D</th>
+                  <th>Kills</th>
+                  <th>Wins</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="rank-gold">1</td>
+                  <td>Kishou</td>
+                  <td>3.41</td>
+                  <td>1840</td>
+                  <td>126</td>
+                </tr>
+                <tr>
+                  <td class="rank-silver">2</td>
+                  <td>Raze</td>
+                  <td>2.96</td>
+                  <td>1650</td>
+                  <td>118</td>
+                </tr>
+                <tr>
+                  <td class="rank-bronze">3</td>
+                  <td>Nova</td>
+                  <td>2.71</td>
+                  <td>1510</td>
+                  <td>109</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <h2 class="section-title">MVP of the Week</h2>
+          <div class="mvp-card">
+            <div style="display:flex; gap:1rem; align-items:center;">
+              <img class="avatar" src="https://images.unsplash.com/photo-1544723795-3fb6469f5b39?auto=format&fit=crop&w=300&q=80" alt="MVP player" />
+              <div>
+                <h3>Echo</h3>
+                <p>Favorite Weapon: FR 5.56</p>
+                <p>Rank: Elite</p>
+                <p>K/D: 2.89</p>
+                <p>Achievements: 8 MVPs</p>
+              </div>
+            </div>
+            <p class="quote">“Consistency turns pressure into power.”</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Announcements</h2>
+          <div class="announcement-grid">
+            <article class="announce-card">
+              <h3>Recruitment Open</h3>
+              <p>We are actively seeking disciplined and loyal players for our next season roster.</p>
+            </article>
+            <article class="announce-card">
+              <h3>Weekly Scrim Routine</h3>
+              <p>Training sessions every Saturday and Sunday with ranked focus and warm-up drills.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="join" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Join Clan</h2>
+          <div class="contact-grid">
+            <div class="panel">
+              <form>
+                <div class="form-grid">
+                  <div class="form-row">
+                    <input class="input" name="username" type="text" placeholder="Username" required />
+                    <input class="input" name="uid" type="text" placeholder="UID" required />
+                  </div>
+                  <div class="form-row">
+                    <input class="input" name="age" type="number" placeholder="Age" required />
+                    <input class="input" name="rank" type="text" placeholder="Rank" required />
+                  </div>
+                  <div class="form-row">
+                    <input class="input" name="weapon" type="text" placeholder="Favorite Weapon" required />
+                    <input class="input" name="mode" type="text" placeholder="Preferred Mode (MP or BR)" required />
+                  </div>
+                  <input class="input" name="timezone" type="text" placeholder="Time Zone" required />
+                  <input class="input" name="contact" type="text" placeholder="Discord or Facebook Link" required />
+                  <textarea class="textarea" name="message" rows="5" placeholder="Why do you want to join Baho Pitoy?" required></textarea>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-primary" type="submit">Submit Application</button>
+                </div>
+              </form>
+            </div>
+            <div class="panel">
+              <h3>Why Join?</h3>
+              <p>We look for players who are skilled, loyal, and ready to grow with the clan.</p>
+              <ul style="margin-top:1rem; line-height:2; color:var(--muted);">
+                <li>Competitive scrims and tournaments</li>
+                <li>Strong team chemistry</li>
+                <li>Supportive leadership</li>
+                <li>Active community communication</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="section reveal">
+        <div class="container">
+          <h2 class="section-title">Contact</h2>
+          <div class="contact-grid">
+            <div class="panel">
+              <h3>Reach the Clan</h3>
+              <div class="socials">
+                <a href="#" aria-label="Discord">💬</a>
+                <a href="#" aria-label="Facebook">📘</a>
+                <a href="#" aria-label="TikTok">🎵</a>
+                <a href="#" aria-label="YouTube">▶️</a>
+                <a href="#" aria-label="Email">✉️</a>
+              </div>
+            </div>
+            <div class="panel">
+              <form>
+                <div class="form-grid">
+                  <input class="input" type="text" placeholder="Your Name" required />
+                  <input class="input" type="email" placeholder="Your Email" required />
+                  <textarea class="textarea" rows="5" placeholder="Message" required></textarea>
+                </div>
+                <div class="form-actions">
+                  <button class="btn btn-secondary" type="submit">Send Message</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <h3>BAHO PITOY</h3>
+      <p>© 2026 Baho Pitoy. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#members">Members</a>
+        <a href="#join">Join</a>
+      </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+      <img id="lightboxImage" src="" alt="Expanded gallery image" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
+'@ | Set-Content -Path "c:\Users\bang\OneDrive\Desktop\HTML\index.html" -Encoding utf8
